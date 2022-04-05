@@ -12,9 +12,11 @@ import java.io.InputStreamReader;
  *
  */
 public class BasicDeclarationUnderstanding {
+	
+//	Log log = LogManager.getLogger("");
 
 	/** The Constant ID. */
-	public static final int ID = 10;
+	public static final int IDEE = 10;
 	
 	/** The Constant PI. */
 	public static final double PI = 3.14;
@@ -26,7 +28,7 @@ public class BasicDeclarationUnderstanding {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 * @throws ArithmeticException the arithmetic exception
 	 */
-	public static void main(String[] args) throws IOException, ArithmeticException {
+	public static void main(String[] args) throws IOException, ArithmeticException ,IllegalArgumentException ,IllegalStateException {
 
 		int a;
 		int b;		
@@ -34,6 +36,7 @@ public class BasicDeclarationUnderstanding {
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader buffer = new BufferedReader(isr);
 		System.out.println("Enter a value");
+//		log.debug("Enter a value");
 		a = Integer.parseInt(buffer.readLine());
 		System.out.println("Enter b value");
 		b = Integer.parseInt(buffer.readLine());	
